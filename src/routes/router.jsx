@@ -6,6 +6,7 @@ import Login from "../pages/authentication/Login";
 import UpcomingEvents from "../pages/Events/UpcomingEvents";
 import PrivateRoute from "../routes/PrivateRoute";
 import CreateEvent from "../pages/Events/CreateEvent";
+import EventDetails from "../pages/Events/EventDetails";
 
 const router = createBrowserRouter([
 	{
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
 					</PrivateRoute>
 				),
 			},
+      {
+        path: "/event/:id",
+        Component: EventDetails
+      }
 		],
 	},
 ]);
