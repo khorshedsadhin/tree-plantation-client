@@ -5,7 +5,7 @@ import { AuthContext } from "../contexts/AuthContext";
 import { auth } from "../firebase/firebase.config";
 
 const axiosSecure = axios.create({
-	baseURL: "http://localhost:3000",
+	baseURL: "https://tree-plantation-server-dun.vercel.app",
 });
 
 const useAxiosSecure = () => {

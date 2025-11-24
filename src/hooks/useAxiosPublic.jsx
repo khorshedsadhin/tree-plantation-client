@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosPublic = axios.create({
-  baseURL: "http://localhost:3000"
+  baseURL: "https://tree-plantation-server-dun.vercel.app"
 })
 
 const useAxiosPublic = () => {
