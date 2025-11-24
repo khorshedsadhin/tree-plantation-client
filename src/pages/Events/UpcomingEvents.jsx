@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import EventCard from '../../components/EventCard';
 import { useQuery, keepPreviousData } from '@tanstack/react-query';
-import useAxiosPublic from '../../hooks/UseAxiosPublic';
+import useAxiosPublic from '../../hooks/useAxiosPublic';
 import { FaSearch, FaFilter } from 'react-icons/fa';
 
 const UpcomingEvents = () => {

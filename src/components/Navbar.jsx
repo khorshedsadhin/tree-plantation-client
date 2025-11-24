@@ -1,5 +1,5 @@
 import { use } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router';
 import toast from 'react-hot-toast';
 import { TbPlant } from 'react-icons/tb'; 
 import { HiOutlineMenuAlt1 } from 'react-icons/hi'; 
@@ -84,14 +84,15 @@ const Navbar = () => {
             >
               <div className="w-10 rounded-full">
                 <img
+                  referrerPolicy='no-referrer'
                   alt="User profile"
-                  src={user.photoURL || 'default-avatar-url'} 
+                  src={user?.photoURL || "https://image2url.com/images/1763958747142-18ef179b-bbdb-404b-87c8-f303f55c97ae.png"} 
                 />
               </div>
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-1 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li className="menu-title">
                 <span>{user.displayName}</span>

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 
