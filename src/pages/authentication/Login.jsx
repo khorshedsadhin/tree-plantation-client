@@ -32,6 +32,7 @@ const Login = () => {
   };
 
   const handleGoogleSignIn = () => {
+    const toastId = toast.loading('Logging in...');
     googleSignIn()
       .then((result) => {
         toast.success('Logged in successfully!', { id: toastId });
