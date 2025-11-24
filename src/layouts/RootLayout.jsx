@@ -8,7 +8,7 @@ const RootLayout = () => {
   const {theme} = use(AuthContext);
 
   return (
-    <div data-theme = {theme} className='h-screen'>
+    <div data-theme = {theme} className='min-h-screen'>
       <Navbar></Navbar>
       <Outlet></Outlet>
       <Footer></Footer>

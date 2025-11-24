@@ -10,11 +10,13 @@ import EventDetails from "../pages/Events/EventDetails";
 import ManageEvents from "../pages/Events/ManageEvents";
 import UpdateEvent from "../pages/Events/UpdateEvent";
 import JoinedEvents from "../pages/Events/JoinedEvents";
+import ErrorPage from "../pages/ErrorPage";
 
 const router = createBrowserRouter([
 	{
 		path: "/",
 		Component: RootLayout,
+    errorElement: <ErrorPage></ErrorPage>,
 		children: [
 			{
 				index: true,
